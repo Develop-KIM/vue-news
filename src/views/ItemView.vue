@@ -1,6 +1,6 @@
 <template>
   <div>
-    news
+    item
   </div>
 </template>
 

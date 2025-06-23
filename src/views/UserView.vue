@@ -1,6 +1,6 @@
 <template>
   <div>
-    news
+    user
   </div>
 </template>
 
