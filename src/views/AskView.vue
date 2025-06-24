@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(ask, id) in askItems" :key="id">{{ ask.title }}</div>
+    <div v-for="(ask, id) in askList" :key="id">{{ ask.title }}</div>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import { mapGetters } from 'vuex';
 export default {
   computed: {
     ...mapGetters({
-      askItems: 'asks'
+      askList: 'asks'
     })
   },
   created() {
