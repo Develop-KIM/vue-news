@@ -1,12 +1,15 @@
 <template>
   <div>
-    <div v-for="(user, id) in newsList" :key="id">{{ user.title }}</div>
-    <p></p>
+    <p v-for="(item, id) in newsList" :key="id">
+      <a :href="item.url">{{ item.title }}</a>
+      <small>{{ item.time_ago }}{{ item.user }}</small>
+    </p>
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+
 export default {
   computed: {
     ...mapGetters({
